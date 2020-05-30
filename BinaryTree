@@ -1,3 +1,4 @@
+```
 //factory method
 function Node(data) {
   this.data = data;
@@ -220,3 +221,4 @@ class BinaryTree {
    console.log("----------getMaximumTree--------");
    console.log(tree.getMaximumTree());
 })();
+```
