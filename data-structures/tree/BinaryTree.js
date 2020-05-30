@@ -27,7 +27,10 @@ class BinaryTree {
       this.insertNode(node);
     }
   }
-
+  
+  /*
+    Inser new node to tree
+  */
   insertNode(node) {
     let current = this.root; //create current node
 
@@ -58,18 +61,27 @@ class BinaryTree {
     }
   }
 
+  /*
+    Add node to left node
+  */
   addLeftNode(data) {
     const node = new Node(data); //create new node
 
     this.root = node;
   }
-
+  
+  /*
+    Add node to right node
+  */
   addRightNode(data) {
     const node = new Node(data); //create new node
 
     this.root = node;
   }
-
+  
+   /*
+    Search in tree by value
+  */
   binarySearch(root, key) {
     if (root === null || root.data === key) return root;
 
@@ -126,6 +138,9 @@ class BinaryTree {
     console.log(`preorder count: ${root.data}`);
   }
 
+   /*
+    Get parent of value 
+  */
   getParent(value) {
     let root = this.root,
       parent = null;
