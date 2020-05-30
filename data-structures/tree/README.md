@@ -1,6 +1,6 @@
 ## Binary Tree Js
 
-Options 
+usage 
 
 ```
 let tree = new BinaryTree();
