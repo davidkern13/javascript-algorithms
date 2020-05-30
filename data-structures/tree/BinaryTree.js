@@ -60,25 +60,6 @@ class BinaryTree {
       }
     }
   }
-
-  /*
-    Add node to left node
-  */
-  addLeftNode(data) {
-    const node = new Node(data); //create new node
-
-    this.root = node;
-  }
-  
-  /*
-    Add node to right node
-  */
-  addRightNode(data) {
-    const node = new Node(data); //create new node
-
-    this.root = node;
-  }
-  
    /*
     Search in tree by value
   */
