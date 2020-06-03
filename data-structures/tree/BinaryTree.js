@@ -15,11 +15,14 @@ class BinaryTree {
     this.mySet = new Set();
 
     this.arr = [];
+    this.Error = -1;
   }
 
   add(data) {
     const node = new Node(data); //create new node
-
+    
+    if (node == null) this.Error;
+    
     if (!this.root) {
       // if we dont have root
       this.root = node;
@@ -33,7 +36,9 @@ class BinaryTree {
   */
   insertNode(node) {
     let current = this.root; //create current node
-
+    
+    if (current == null) this.Error;
+    
     while (current) {
       //while the tree until current node
       if (node.data < current.data) {
@@ -79,13 +84,11 @@ class BinaryTree {
     Inorder (Left, Root, Right)
   */
   inorderTree(root) {
-    if (root !== null) {
+     if (root == null) this.Error;
+    
       this.inorderTree(root.value.left);
       console.log(`inorder count: ${root.data}`);
       this.inorderTree(root.value.right);
-    }
-
-    return `Node not found~`;
   }
 
   preorder() {
@@ -96,7 +99,7 @@ class BinaryTree {
     Preorder (Root, Left, Right)
   */
   preorderTree(root) {
-    if (root == null) return;
+    if (root == null) return this.Error;
 
     console.log(`preorder count: ${root.data}`);
     this.preorderTree(root.value.left);
@@ -112,7 +115,7 @@ class BinaryTree {
   */
 
   postorderTree(root) {
-    if (root == null) return;
+    if (root == null) this.Error;
 
     this.postorderTree(root.value.left);
     this.postorderTree(root.value.right);
@@ -126,7 +129,7 @@ class BinaryTree {
     let root = this.root,
       parent = null;
 
-    if (root == null) return;
+    if (root == null) this.Error;
 
     while (root) {
       if (value < root.data) {
@@ -149,7 +152,7 @@ class BinaryTree {
   getMinimumTree() {
     let root = this.root;
 
-    if (root == null) return -1;
+    if (root == null) this.Error;
 
     while (root.value.left != null) {
       root = root.value.left;
@@ -164,7 +167,7 @@ class BinaryTree {
   getMaximumTree() {
     let root = this.root;
 
-    if (root == null) return -1;
+    if (root == null) this.Error;
 
     while (root.value.right != null) {
       root = root.value.right;
@@ -175,7 +178,9 @@ class BinaryTree {
 
   printTree(tree) {
     let node = tree;
-
+    
+    if (node == null) this.Error;
+    
     for (let i in node) {
       if (Number.isInteger(node[i])) {
         let number = node[i];
@@ -204,16 +209,22 @@ class BinaryTree {
 
    console.log("--------binarySearch----------");
    console.log(tree.binarySearch(tree.root, 5));
+  
    console.log("---------inorder---------");
    console.log(tree.inorder());
+  
    console.log("---------preorder---------");
    console.log(tree.preorder());
+  
    console.log("--------postorder----------");
    console.log(tree.postorder());
+  
    console.log("-------getParent-----------");
    console.log(tree.getParent(4));
+  
    console.log("---------getMinimumValue---------");
    console.log(tree.getMinimumTree());
+  
    console.log("----------getMaximumTree--------");
    console.log(tree.getMaximumTree());
 })();
