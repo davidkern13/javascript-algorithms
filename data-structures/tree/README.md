@@ -1,10 +1,13 @@
 ## Binary Tree Js
 
-usage 
+Create instance of class
 
 ```
 let tree = new BinaryTree();
+```
 
+Use method to manipulate the tree
+```
 tree.add(value);
 tree.search(tree, value)
 tree.inorder()
@@ -15,4 +18,4 @@ tree.getMinimumTree()
 tree.getMaximumTree()
 ```
 
-[Example](https://codesandbox.io/s/binarytreejs-g8ulb?file=/src/index.js:3732-4316)
+[Check the Example in Live ](https://codesandbox.io/s/binarytreejs-g8ulb?file=/src/index.js:3732-4316)
