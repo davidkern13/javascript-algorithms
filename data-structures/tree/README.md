@@ -1,4 +1,4 @@
-## Binary Tree Js
+## Binary Tree Js, [Check the Example in Live ](https://codesandbox.io/s/binarytreejs-g8ulb?file=/src/index.js:3732-4316)
 
 #Binary search trees for ES6
 
@@ -20,4 +20,4 @@ tree.getMinimumTree()
 tree.getMaximumTree()
 ```
 
-[Check the Example in Live ](https://codesandbox.io/s/binarytreejs-g8ulb?file=/src/index.js:3732-4316)
+
