@@ -18,6 +18,7 @@ tree.postorder()
 tree.getParent(value)
 tree.getMinimumTree()
 tree.getMaximumTree()
+tree.size();
 ```
 
 
