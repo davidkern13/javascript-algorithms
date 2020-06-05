@@ -1,5 +1,7 @@
 ## Binary Tree Js
 
+#Binary search trees for ES6
+
 Create instance of class
 
 ```
