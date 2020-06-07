@@ -1,6 +1,6 @@
 ## Binary Tree Js
 
-[Sandbox](https://codesandbox.io/s/binarytreejs-g8ulb?file=/src/index.js:3732-4316)
+### [Sandbox](https://codesandbox.io/s/binarytreejs-g8ulb?file=/src/index.js:3732-4316)
 
 #Binary search trees for ES6
 
