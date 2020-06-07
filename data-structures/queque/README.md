@@ -1,4 +1,6 @@
-# Queue in Javascript - FIFO(First in First Out), [Check the Example in Live ](https://codesandbox.io/s/quequejs-vky82)
+## Queue in Javascript - FIFO(First in First Out)
+
+### [Check the Example in Live ](https://codesandbox.io/s/quequejs-vky82)
 
 Create instance of class
 
