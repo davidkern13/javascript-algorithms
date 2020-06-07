@@ -1,4 +1,3 @@
-```
 class Queue {
   constructor() {
     this.list = [];
@@ -64,4 +63,4 @@ class Queue {
 
   console.log("queue:", queue.print());
 })();
-```
+
