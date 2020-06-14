@@ -12,14 +12,14 @@ const list = new LinkedList();
 Use method to manipulate the linkedlist
 
 ```
-  list.addToEndList(value);
-  list.addToStartList(value);
+list.addToEndList(value);
+list.addToStartList(value);
  
 ```
 Loop iteration
 
 ```
-  for (const key of list) {
-    console.log(key);
-  }
+for (const key of list) {
+  console.log(key);
+}
 ```
